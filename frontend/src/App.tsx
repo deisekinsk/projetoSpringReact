@@ -1,10 +1,15 @@
+import NavBar from "components/NavBar";
+
 function App() {
   return (
-    <div >
-      <h1>   | Hello 🧼Clean Project🧼 of Spring.React |</h1>
-      <h1 className="text-primary">I'm Deise Kinsk 👩🏽‍💻.</h1>
-      <h1>I am looking for an opportunity for a developer entry-level job.</h1>      
-    </div>    
+    <>
+      <NavBar />
+      <div  className="container">
+        <h1>   | Hi | </h1>
+        <h1 className="text-primary">I'm Deise Kinsk 👩🏽‍💻.</h1>
+        <h1>I am looking for an opportunity for a developer entry-level job.</h1>
+      </div>
+    </>
   );
 }
 

@@ -1,18 +1,36 @@
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
 import DataTable from "components/DataTable";
+import BarChart from "components/BarChart";
+import DonutChart from "components/DonutChart";
 
 function App() {
   return (
     <>
       <NavBar />
-      <div  className="container">
-        <h1> Hi</h1>
-        <h1 className="text-primary">I'm Deise Kinsk. </h1>
-        <h1>I am looking for an opportunity for a developer entry-level job.</h1>
+      <div className="container">
+        <h1 className="text-primary py-3">Dashboard de Vendas </h1>
+
+        <div className="row px-3">
+
+          <div className="col-sm-6">
+            <h5 className="text-center">Sucesso</h5>
+            <BarChart />
+          </div>
+
+          <div className="col-sm-6">
+            <h5 className="text-center">Vendas</h5>
+            <DonutChart />
+          </div>
+
+        </div>
+
+        <div className="col-sm-6">
+          <h2 className="text-primary py-3"> 🗠 Todas as Vendas</h2>
+        </div>
+
         <DataTable />
       </div>
-      
       <Footer />
     </>
   );

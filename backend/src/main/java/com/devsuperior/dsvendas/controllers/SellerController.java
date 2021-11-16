@@ -1,4 +1,4 @@
-package com.devsuperior.dsvendas;
+package com.devsuperior.dsvendas.controllers;
 
 import com.devsuperior.dsvendas.dto.SellerDTO;
 import com.devsuperior.dsvendas.entities.Seller;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/sellers")
-public class controllers {
+public class SellerController {
     @Autowired
     private SellerService service;
 
